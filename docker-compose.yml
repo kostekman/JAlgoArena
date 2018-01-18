@@ -1,0 +1,41 @@
+version: '3.1'
+
+services:
+#  eureka:
+#    build: ./JAlgoArena-Eureka
+#    ports:
+#      - "5000:5000"
+#  api:
+#    build: ./JAlgoArena-API
+#    links:
+#      - eureka
+#    ports:
+#      - "5001:5001"
+#  auth:
+#    build: ./JAlgoArena-Auth
+#    links:
+#      - eureka
+#    ports:
+#          - "9999:9999"
+#  judge:
+#    build: ./JAlgoArena-Judge
+#    links:
+#      - eureka
+#    ports:
+#          - "8080:8080"
+#  problems:
+#    build: ./JAlgoArena-Problems
+#    links:
+#      - eureka
+#    ports:
+#          - "5002:5002"
+#  submissions:
+#    build: ./JAlgoArena-Submissions
+#    links:
+#          - eureka
+#    ports:
+#      - "5003:5003"
+  ui:
+    build: ./JAlgoArena-UI
+    ports:
+      - "8000:8000"
